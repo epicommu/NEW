@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적립식 투자 결과 계산기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>적립식 투자 결과 계산기</h1>
+        <form id="investment-form">
+            <div class="form-group">
+                <label for="annual-investment">연간 투자 금액:</label>
+                <input type="number" id="annual-investment" name="annual-investment" required>
+            </div>
+            <div class="form-group">
+                <label for="investment-period">투자 기간 (년):</label>
+                <input type="number" id="investment-period" name="investment-period" required>
+            </div>
+            <div class="form-group">
+                <label for="investment-asset">투자 자산:</label>
+                <select id="investment-asset" name="investment-asset" required>
+                    <option value="stock">주식</option>
+                    <option value="bonds">채권</option>
+                    <option value="real-estate">부동산</option>
+                    <!-- 기타 투자 자산 옵션 추가 가능 -->
+                </select>
+            </div>
+            <button type="submit">계산하기</button>
+        </form>
+        <div id="result-container">
+            <h2>계산 결과</h2>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
